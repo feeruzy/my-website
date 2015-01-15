@@ -1,3 +1,6 @@
+<?php
+include('script/class.php');
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
@@ -20,15 +23,12 @@
     <script src="js/code.js"></script>
 
 </head>
+
 <body>
 <div class="container-fluid">
     <div id="intro" class="row">
         <div class="nav">
-            <ul>
-                <li><a href="http://feeruzy.ir" >Home</a></li>
-                <li><a href="http://blog.feeruzy.ir" >Blog</a></li>
-                <li><a href="http://resume.feeruzy.ir" >Resume</a></li>
-            </ul>
+            <?php nav($nav_items); ?>
         </div>
 
         <div id="title">
@@ -38,96 +38,20 @@
 
     <div id="service" class="row">
         <div class="content">
-
             <h2>my services:</h2>
-
-            <div class="item">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x red"></i>
-                    <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>Lorem ipsum eleifend bibendum proin tempor nunc mauris sapien, mauris per lacinia molestie ante fringilla adipiscing torquent, lobortis et orci augue cubilia erat hac et eleifend phasellus varius aptent suspendisse lacinia blandit ultrices pellentesque.
-                </p>
-            </div>
-
-            <div class="item">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x green"></i>
-                    <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>Fames ultrices congue dolor pulvinar lobortis augue sollicitudin bibendum non facilisis morbi orci blandit cubilia et varius elit litora, vivamus fames sapien condimentum ullamcorper, primis commodo felis sollicitudin sagittis.</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x orange"></i>
-                    <i class="fa fa-users fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>Sodales egestas ligula ultrices vehicula dolor et libero cras nunc placerat rhoncus himenaeos, etiam sit consectetur non mauris lacus in mi dui blandit taciti est tincidunt nibh habitasse dolor fusce adipiscing taciti.</p>
-            </div>
+            <?php service($services); ?>
         </div>
-
     </div>
 
     <div id="info" class="row">
-
         <div class="content">
-
             <h2>Social Information:</h2>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-google-plus-square gmail"></i>
-                </span>
-                <p>Feeruzy@Gmail.com</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-phone-square phone"></i>
-                </span>
-                <p>+98-918-966-0541</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-linkedin-square linkedin"></i>
-                </span>
-                <p>Feeruzy</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-twitter-square twitter"></i>
-                </span>
-                <p>@_licence</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-github-square github"></i>
-                </span>
-                <p>Feeruzy</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-plus-square cv"></i>
-                </span>
-                <p>Resume</p>
-            </div>
-
-            <div class="item">
-                <span class="fa-2x fa-fw">
-                    <i class="fa fa-caret-square-o-right blog"></i>
-                </span>
-                <p>View my blog</p>
-            </div>
+            <?php social($social_items); ?>
         </div>
     </div>
 
     <div id="footer">
-        &copy; 2013 - <?=date('Y')?> :)
+        &copy; 2013 - <?=date('Y')?>
     </div>
 
 </div>
