@@ -1,0 +1,179 @@
+/*for reset all stuff*/
+@import url("../third-party/css/reset.min.css");
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+/* Extra small devices (phones, less than 768px) */
+
+    /*test tools -----------------------------------------------------------------------------------------------------*/
+    .b { border: 1px dotted mediumvioletred;}
+
+    /*Global setting -------------------------------------------------------------------------------------------------*/
+    html, body { height: 100%;  width: 100% }
+    .row { width: 100%;  margin: 0;  padding: 0 }
+    #intro { min-height: 320px; height: 100% }
+    h2 { font-weight: 700}
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+        background: url("../img/bg.jpg") center fixed;
+
+        min-height: 320px;
+        height: 100%;
+        position: relative;
+
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /*social color -------------------------------------------------------------------------------------------------- */
+    .gmail {color: #dd4b39}
+    .phone {color: #ec971f}
+    .linkedin {color: #007bb6}
+    .github {color: #101010}
+    .blog {color: #70ff35}
+    .twitter {color: #00aced}
+    .cv { color: darkred}
+
+
+    /*navigation part ------------------------------------------------------------------------------------------------*/
+    .nav {
+        font-weight: 300;
+        border-bottom: 1px solid #999999;
+        background-color: #222222;
+        height: 15%;
+
+        display: -webkit-flex; /* Safari */
+        -webkit-align-items: center; /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul {
+        text-align: center;
+        -webkit-flex: 1; /* Safari 6.1+ */
+        flex: 1;
+    }
+
+    .nav li { display: inline;  list-style-type: none;  padding: 0.5em }
+    .nav a:link { color: #66afe9; text-decoration: none }
+    .nav a:hover { color: #999999 }
+    .nav a:visited { color: #204d74 }
+
+    /* title paragraph -----------------------------------------------------------------------------------------------*/
+    #title {
+        background-color: rgba(255,250,254,0.6);
+        height: 85%;
+
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 300;
+        font-size: 2.2em;
+
+        padding: 0 1em;
+        border-bottom: 1px solid #999999;
+
+        display: -webkit-flex; /* Safari */
+        -webkit-align-items: center; /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+    }
+
+    #title p {
+        line-height: 1.3;
+
+        -webkit-flex: 1; /* Safari 6.1+ */
+        flex: 1;
+        text-align:center;
+    }
+
+    #title strong {
+        font-weight: 500;
+        font-size: 1.4em;
+        color: #403280;
+    }
+
+    /* service part --------------------------------------------------------------------------------------------------*/
+    #service {
+        padding: 2em 0;
+        font-weight: 300;
+        min-height: 100%;
+
+        display: -webkit-flex; /* Safari */
+        -webkit-align-content: space-around; /* Safari 7.0+ */
+        display: flex;
+        align-content: space-around;
+
+        background-color: aliceblue;
+    }
+
+    #service .content {
+        -webkit-flex: 1; /* Safari 6.1+ */
+        flex: 1;
+    }
+
+    #service .item {
+        padding: 0.5em;
+        vertical-align: bottom;
+        clear: both;
+    }
+
+    #service p { padding: 0.6em; text-align: justify; color: #3c3c3c; line-height: 1.5 }
+    #service h2 { text-align: center }
+    #service span {float: left }
+    #service .red { color: palevioletred }
+    #service .orange { color: darkorange }
+    #service .green { color: forestgreen }
+
+
+    /* Info part -----------------------------------------------------------------------------------------------------*/
+    #info {
+        padding: 1em 1em;
+        font-weight: 300;
+        min-height: 100%;
+
+        display: -webkit-flex; /* Safari */
+        -webkit-align-content: space-around; /* Safari 7.0+ */
+        display: flex;
+        align-content: space-around;
+
+        color: ghostwhite;
+        background-color: darkslategrey;
+        border-top: 1px solid #999999;
+        border-bottom: 1px solid #999999;
+    }
+
+    #info .content { -webkit-flex: 1; flex: 1 }
+    #info .item {padding: 0.3em 0}
+    #info h2 { text-align: center; padding: 1em 0}
+    #info p { vertical-align: bottom; padding: 0.6em}
+    #info span {float: left; margin-left: 5%; clear: both }
+
+
+    /*footer part ----------------------------------------------------------------------------------------------------*/
+    #footer {
+        background-color: #101010;
+        padding: 0.5em;
+        color: #00aced;
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+}
