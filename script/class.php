@@ -14,7 +14,7 @@
     //for showing service part.----------------------------------------------------------------------------------------
     function service($array)
     {
-        echo '<div class="item">';
+        echo '<div class="item b">';
         foreach ($array as $attr) {
             echo '<span class="fa-stack fa-2x">';
             echo '<i class="fa fa-circle fa-stack-2x '.$attr[0].'"></i>';
@@ -27,15 +27,108 @@
 
 
     //for showing social items.----------------------------------------------------------------------------------------
-    function social($array)
-    {
-        foreach ($array as $social)
-        {
-            echo '<div class="item">';
-            echo '<span class="fa-2x fa-fw">';
-            echo '<i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>';
-            echo '</span>';
-            echo '<p><a href="'.$social[2].'">'. $social[3] .'</a></p>';
+    //this part show in sx and sm screen.
+    //for xs screen_size must set to 0
+    //for sm screen_size must set to 1
+    function social($array, $screen_size) {
+
+        if ($screen_size == 0) {
+
+            echo '<div class="visible-xs hidden-sm hidden-md hidden-lg">';
+            foreach ($array as $social){
+                echo    '<div class="item">
+                         <span class="fa-2x fa-fw">
+                         <i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>
+                         </span>
+                         <p><a href="'.$social[2].'">'. $social[3] .'</a></p>
+                         </div>';
+            }
+            echo '</div>';
+
+
+        } elseif($screen_size == 1) {
+            $count = count($array);
+            $low = array_slice($array,0,($count/2));
+            $high = array_slice($array,($count/2),$count);
+
+            echo '<div class="row hidden-xs visible-sm hidden-md hidden-lg">';
+            echo '<div class="col-sm-6">';
+            foreach($low as $social) {
+                echo    '<div class="item">
+                         <span class="fa-2x fa-fw">
+                         <i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>
+                         </span>
+                         <p><a href="'.$social[2].'">'. $social[3] .'</a></p>
+                         </div>';
+            }
+            echo '</div>';
+            echo '<div class="col-sm-6">';
+            foreach($high as $social) {
+                echo    '<div class="item">
+                         <span class="fa-2x fa-fw">
+                         <i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>
+                         </span>
+                         <p><a href="'.$social[2].'">'. $social[3] .'</a></p>
+                         </div>';
+            }
+            echo '</div>';
             echo '</div>';
         }
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//                for($i=0; $i<($count/2); $i++){
+//
+//                    foreach ($array as $social){
+//
+//                        echo   '<div class="item">
+//                                 <span class="fa-2x fa-fw">
+//                                 <i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>
+//                                 </span>visible
+//                                 <p><a href="'.$social[2].'">'. $social[3] .'</a></p>
+//                                 </div>';
+//                    }
+//                }
+//            echo '</div>';
+//
+//            echo '<div class="col-sm-6">';
+//
+//            for($i=($count/2); $i<$count; $i++){
+//
+//                foreach ($array as $social){
+//
+//                    echo   '<div class="item">
+//                                 <span class="fa-2x fa-fw">
+//                                 <i class="fa fa-'.$social[0].'-square '.$social[1].'"></i>
+//                                 </span>
+//                                 <p><a href="'.$social[2].'">'. $social[3] .'</a></p>
+//                                 </div>';
+//                }
+//            }
+//            echo '</div>';
+//            echo '</div>';

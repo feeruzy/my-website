@@ -1,6 +1,4 @@
-<?php
-include('script/class.php');
-?>
+<?php include('script/class.php'); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
@@ -36,17 +34,18 @@ include('script/class.php');
         </div>
     </div>
 
-    <div id="service" class="row">
+    <div id="service" class="row hidden-md hidden-lg visible-sm visible-xs">
         <div class="content">
             <h2>my services:</h2>
             <?php service($services); ?>
         </div>
     </div>
 
-    <div id="info" class="row">
+    <div id="info" class="row hidden-md hidden-lg visible-sm visible-xs">
         <div class="content">
             <h2>Social Information:</h2>
-            <?php social($social_items); ?>
+            <?php social($social_items, 0); ?>
+            <?php social($social_items, 1); ?>
         </div>
     </div>
 
@@ -55,8 +54,6 @@ include('script/class.php');
     </div>
 
 </div>
-
-
 
 </body>
 </html>

@@ -1,6 +1,5 @@
 <?php
 
-
 $nav_items = [
     'Home' => 'feeruzy.ir',
     'Blog' => 'blog.feeruzy.ir',
