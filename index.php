@@ -34,14 +34,14 @@
         </div>
     </div>
 
-    <div id="service" class="row hidden-md hidden-lg visible-sm visible-xs">
+    <div id="service" class="row visible-sm-* visible-xs-* hidden-md hidden-lg">
         <div class="content">
             <h2>my services:</h2>
             <?php service($services); ?>
         </div>
     </div>
 
-    <div id="info" class="row hidden-md hidden-lg visible-sm visible-xs">
+    <div id="info" class="row visible-sm-* visible-xs-* hidden-md hidden-lg">
         <div class="content">
             <h2>Social Information:</h2>
             <?php social($social_items, 0); ?>
