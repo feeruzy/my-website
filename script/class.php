@@ -17,7 +17,7 @@
         echo '<div class="item">';
         foreach ($array as $attr) {
             echo '<span class="fa-stack fa-2x">';
-            echo '<i class="fa fa-circle fa-stack-2x '.$attr[0].'"></i>';
+            echo '<i class="fa fa-square fa-stack-2x '.$attr[0].'"></i>';
             echo '<i class="fa fa-'.$attr[1].' fa-stack-1x fa-inverse"></i>';
             echo '</span>';
             echo '<p>'.$attr[2].'</p>';

@@ -7,9 +7,9 @@ $nav_items = [
 ];
 
 $services = [
-    ['red', 'desktop', 'Lorem ipsum eleifend bibendum proin tempor nunc mauris sapien, mauris per lacinia molestie ante fringilla adipiscing torquent, lobortis et orci augue cubilia erat hac et eleifend phasellus varius aptent suspendisse lacinia blandit ultrices pellentesque.'],
-    ['green','code', 'Fames ultrices congue dolor pulvinar lobortis augue sollicitudin bibendum non facilisis morbi orci blandit cubilia et varius elit litora, vivamus fames sapien condimentum ullamcorper, primis commodo felis sollicitudin sagittis.'],
-    ['orange','users', 'Sodales egestas ligula ultrices vehicula dolor et libero cras nunc placerat rhoncus himenaeos, etiam sit consectetur non mauris lacus in mi dui blandit taciti est tincidunt nibh habitasse dolor fusce adipiscing taciti.']
+    ['red', 'desktop', 'Front End & UI/UX Design: I can change your online face to an amazing beautiful one. I do this whit Html, CSS and Javascript.'],
+    ['green','code', 'Back-End & Programming: The Different between a work and a perfect work is how to implement it, I can do this stuff whit powerful programming languages like PHP and Python.'],
+    ['orange','users', 'Consultation: Without great plans, the beauty and good implement are nothing. I growing your plans to a successful business.']
 ];
 
 $social_items = [

@@ -7,7 +7,7 @@
 /* Extra small devices (phones, less than 768px) */
 
     /*test tools -----------------------------------------------------------------------------------------------------*/
-    .b { border: 1px dotted mediumvioletred;}
+    .b { border: 2px dotted mediumvioletred;}
 
     /*Global setting -------------------------------------------------------------------------------------------------*/
     html, body { height: 100%;  width: 100% }
@@ -101,9 +101,9 @@
         min-height: 100%;
 
         display: -webkit-flex; /* Safari */
-        -webkit-align-content: space-around; /* Safari 7.0+ */
+        -webkit-align-content: space-between; /* Safari 7.0+ */
         display: flex;
-        align-content: space-around;
+        align-content: space-between;
 
         background-color: aliceblue;
     }
@@ -114,14 +114,13 @@
     }
 
     #service .item {
-        padding: 0.5em;
-        vertical-align: bottom;
+        padding: 1em;
         clear: both;
     }
 
-    #service p { padding: 0.6em; text-align: justify; color: #3c3c3c; line-height: 1.5 }
+    #service p { padding: 0.5em; text-align: justify; color: #3c3c3c; line-height: 2 }
     #service h2 { text-align: center }
-    #service span {float: left }
+    #service span { margin: 0.2em; float: left }
     #service .red { color: palevioletred }
     #service .orange { color: darkorange }
     #service .green { color: forestgreen }
