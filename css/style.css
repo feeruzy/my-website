@@ -202,7 +202,6 @@
     #title .social a { margin: 0.15em; opacity: 0.8 }
     #title .social a:hover { margin: 0.15em; opacity: 1 }
 
-
     .slider {padding: 0.5em; text-align: justify; border-left: 1px dotted grey}
     .slider span {float: left; margin-right: 0.5em }
     .slider p {display: inline; vertical-align: sub }
@@ -215,6 +214,10 @@
     .slider-nav ul{padding:0; margin:0 0.5em;  display: inline}
     .slider-nav li{list-style-type: none;  display: inline}
     .active-dot { color: #B0BEC5}
+
+
+    #skill p {font-size: 1.1em}
+    #skill h3 {font-size: 1.2em}
 }
 
 /* Medium devices (desktops, 992px and up) */
