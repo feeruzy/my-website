@@ -6,13 +6,12 @@
 
 /* Extra small devices (phones, less than 768px) */
 
-    /*test tools -----------------------------------------------------------------------------------------------------*/
+    /*test tools ----------------------------------------------------------------------------------------------------*/
     .b { border: 2px dotted mediumvioletred;}
 
-    /*Global setting -------------------------------------------------------------------------------------------------*/
+    /*Global setting ------------------------------------------------------------------------------------------------*/
     html, body { height: 100%;  width: 100% }
     .row { width: 100%;  margin: 0;  padding: 0 }
-    #intro { min-height: 320px; height: 100% }
     h2 { font-weight: 700}
 
     .container-fluid {
@@ -27,17 +26,20 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    /*social color -------------------------------------------------------------------------------------------------- */
+    /*social color ------------------------------------------------------------------------------------------------- */
     .gmail {color: #dd4b39}
     .phone {color: #ec971f}
     .linkedin {color: #007bb6}
     .github {color: #101010}
-    .blog {color: #70ff35}
+    .blog {color: #004D40}
     .twitter {color: #00aced}
-    .cv { color: darkred}
+    .cv { color: #673AB7}
+    .feed {color: #FF3D00}
 
 
-    /*navigation part ------------------------------------------------------------------------------------------------*/
+    #intro { min-height: 320px; height: 100% }
+
+    /*navigation part -----------------------------------------------------------------------------------------------*/
     .nav {
         font-weight: 300;
         border-bottom: 1px solid #999999;
@@ -48,22 +50,22 @@
         -webkit-align-items: center; /* Safari 7.0+ */
         display: flex;
         align-items: center;
+        text-align: center;
     }
 
     .nav ul {
-        text-align: center;
         -webkit-flex: 1; /* Safari 6.1+ */
         flex: 1;
     }
 
-    .nav li { display: inline;  list-style-type: none;  padding: 0.5em }
+    .nav li { display: inline;  list-style-type: none;  padding: 0.5em; color:#66afe9 }
     .nav a:link { color: #66afe9; text-decoration: none }
     .nav a:hover { color: #999999 }
     .nav a:visited { color: #204d74 }
 
-    /* title paragraph -----------------------------------------------------------------------------------------------*/
+    /* title paragraph ----------------------------------------------------------------------------------------------*/
     #title {
-        background-color: rgba(255,250,254,0.6);
+        background-color: rgba(176,190,197 ,0.4);
         height: 85%;
 
         text-align: center;
@@ -85,7 +87,6 @@
 
         -webkit-flex: 1; /* Safari 6.1+ */
         flex: 1;
-        text-align:center;
     }
 
     #title strong {
@@ -94,41 +95,58 @@
         color: #403280;
     }
 
-    /* service part --------------------------------------------------------------------------------------------------*/
+
+    /* service part -------------------------------------------------------------------------------------------------*/
     #service {
         padding: 2em 0;
         font-weight: 300;
         min-height: 100%;
 
         display: -webkit-flex; /* Safari */
-        -webkit-align-content: space-between; /* Safari 7.0+ */
+        -webkit-align-content: space-around; /* Safari 7.0+ */
         display: flex;
-        align-content: space-between;
+        align-content: space-around;
 
-        background-color: aliceblue;
+        background-color: #FAFAFA;
     }
 
     #service .content {
         -webkit-flex: 1; /* Safari 6.1+ */
         flex: 1;
+        margin: 10%
     }
 
     #service .item {
-        padding: 1em;
+        margin: 1em;
         clear: both;
     }
 
-    #service p { padding: 0.5em; text-align: justify; color: #3c3c3c; line-height: 2 }
-    #service h2 { text-align: center }
-    #service span { margin: 0.2em; float: left }
+    #service p {padding: 1em; text-align: justify; color: #3c3c3c; line-height: 2 }
+    #service span { margin: 0.6em 0 0 0; float: left }
     #service .red { color: palevioletred }
     #service .orange { color: darkorange }
     #service .green { color: forestgreen }
 
 
-    /* Info part -----------------------------------------------------------------------------------------------------*/
+    /* skills part --------------------------------------------------------------------------------------------------*/
+    #skill {
+        padding: 1em;
+        min-height: 100%;
+
+        font-weight: 300;
+        line-height: 2;
+        color: #B0BEC5;
+        background-color: #37474F;
+
+    }
+
+    #skill .content { margin: 5% }
+    #skill .item { padding: 1em }
+    #skill p { padding: 0.5em }
+    #skill h3 { display: inline; color: #CFD8DC; font-weight: 400 }
+
+    /* Info part ----------------------------------------------------------------------------------------------------*/
     #info {
-        padding: 1em 1em;
         font-weight: 300;
         min-height: 100%;
 
@@ -138,23 +156,23 @@
         align-content: space-around;
 
         color: ghostwhite;
-        background-color: darkslategrey;
+        background-color: #01579B;
         border-top: 1px solid #999999;
         border-bottom: 1px solid #999999;
     }
 
-    #info .content { -webkit-flex: 1; flex: 1 }
+    #info .content { -webkit-flex: 1; flex: 1; margin: 5% }
     #info .item {padding: 0.3em 0}
-    #info h2 { text-align: center; padding: 1em 0}
+    #info h2 {padding: 1em 0}
     #info p { vertical-align: bottom; padding: 0.6em}
-    #info span {float: left; margin-left: 5%; clear: both }
+    #info span {float: left; margin: 0 0.5em 0 5%; clear: both }
     #info a:link { color: #f5f5f5; text-decoration: none }
     #info a:active { color: lightgrey }
     #info a:visited{ color: navajowhite }
 
 
 
-    /*footer part ----------------------------------------------------------------------------------------------------*/
+    /*footer part ---------------------------------------------------------------------------------------------------*/
     #footer {
         background-color: #101010;
         padding: 0.5em;
@@ -166,17 +184,54 @@
 
 
 
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+    .nav {height: 10%; text-align: left}
+    .nav ul{margin-left: 5%}
+
+    #title {
+        height: 90%;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 2;
+        text-align: center;
+    }
+    #title .social { margin-top: 10% }
+    #title .social a { margin: 0.15em; opacity: 0.8 }
+    #title .social a:hover { margin: 0.15em; opacity: 1 }
+
+
+    .slider {padding: 0.5em; text-align: justify; border-left: 1px dotted grey}
+    .slider span {float: left; margin-right: 0.5em }
+    .slider p {display: inline; vertical-align: sub }
+
+    .slide {display: none; clear: both}
+    .active-slide {display: block}
+
+    .slider-nav {margin-top: 1em; text-align: center; color: #37474F}
+    .slider-nav a {color: #37474F}
+    .slider-nav ul{padding:0; margin:0 0.5em;  display: inline}
+    .slider-nav li{list-style-type: none;  display: inline}
+    .active-dot { color: #B0BEC5}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px)
 {
+    .nav {height: 8% }
+    #title {height: 92%; font-size: 1.3em}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 {
+    .nav { background-color: rgba(176,190,197 ,0.4); border: 0;font-weight: 700 }
+    .nav li {color: #1565C0}
+    .nav a:link {color: #1565C0}
+    .nav a:hover {color: #37474F}
+    .nav a:visited {color: #607D8B}
+
+    #title {height: 95%;  font-size: 1.4em}
 }

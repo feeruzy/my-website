@@ -2,24 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feeruzy's Home page</title>
-
-
-    <!--<link href="third-party/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <!--<link href="third-party/css/font-awesome.min.css" rel="stylesheet">-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-
-    <script src="third-party/js/jquery.min.js"></script>
-    <script src="third-party/js/bootstrap.min.js"></script>
-    <script src="js/code.js"></script>
-
+    <?php head($header_items); ?>
 </head>
 
 <body>
@@ -30,22 +13,37 @@
         </div>
 
         <div id="title">
-            <p>Hi, I'm <strong>Feeruzy</strong>, <br> a web developer</p>
+            <?php showTitle($title, xs) ?>
+            <div class="row col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 hidden-xs visible-sm visible-md visible-lg">
+                <div class="row">
+                    <?php showTitle($title) ?>
+                    <?php service($services); ?>
+                </div>
+                <div class="row">
+                    <?php social($social_items); ?>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="service" class="row visible-sm-* visible-xs-* hidden-md hidden-lg">
+    <div id="service" class="row visible-sm-* hidden-sm hidden-md hidden-lg">
         <div class="content">
             <h2>my services:</h2>
-            <?php service($services); ?>
+            <?php service($services, xs); ?>
         </div>
     </div>
 
-    <div id="info" class="row visible-sm-* visible-xs-* hidden-md hidden-lg">
+    <div id="skill" class="row hidden-xs">
+        <div class="content">
+            <h2>My skills:</h2>
+            <?php showSkill($skill_items); ?>
+        </div>
+    </div>
+
+    <div id="info" class="row visible-sm-* hidden-sm hidden-md hidden-lg">
         <div class="content">
             <h2>Social Information:</h2>
-            <?php social($social_items, 0); ?>
-            <?php social($social_items, 1); ?>
+            <?php social($social_items, xs); ?>
         </div>
     </div>
 
