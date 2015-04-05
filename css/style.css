@@ -204,8 +204,8 @@
 
     .slides {position: relative;}
     .slide {position: absolute; left: 0; top: 5%; padding: 1em; text-align: justify;}
-    .slide span {float: left}
-    .slide p {margin-left: 0.5em}
+    .slide span {float: left; margin-right: 0.4em}
+    .slide p {padding: 0.1em}
 
     #skill p {font-size: 1.1em}
     #skill h3 {font-size: 1.2em}
