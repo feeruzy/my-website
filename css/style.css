@@ -198,23 +198,14 @@
         line-height: 2;
         text-align: center;
     }
-    #title .social { margin-top: 10% }
+    #title .social { clear: both; margin-top: 20% }
     #title .social a { margin: 0.15em; opacity: 0.8 }
     #title .social a:hover { margin: 0.15em; opacity: 1 }
 
-    .slider {padding: 0.5em; text-align: justify; border-left: 1px dotted grey}
-    .slider span {float: left; margin-right: 0.5em }
-    .slider p {display: inline; vertical-align: sub }
-
-    .slide {display: none; clear: both}
-    .active-slide {display: block}
-
-    .slider-nav {margin-top: 1em; text-align: center; color: #37474F}
-    .slider-nav a {color: #37474F}
-    .slider-nav ul{padding:0; margin:0 0.5em;  display: inline}
-    .slider-nav li{list-style-type: none;  display: inline}
-    .active-dot { color: #B0BEC5}
-
+    .slides {position: relative;}
+    .slide {position: absolute; left: 0; top: 5%; padding: 1em; text-align: justify;}
+    .slide span {float: left}
+    .slide p {margin-left: 0.5em}
 
     #skill p {font-size: 1.1em}
     #skill h3 {font-size: 1.2em}

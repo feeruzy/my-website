@@ -28,9 +28,9 @@ $title = [
 ];
 
 $services = [
-    ['slide active-slide', 'red', 'laptop', 'Front End & UI/UX Design: I can change your online face to an amazing beautiful one. I do this with Html, CSS and Javascript.'],
-    ['slide', 'green','terminal', 'Back-End & Programming: The Difference between a work and a perfect work is how to implement it, I can do this stuff with powerful programming languages like PHP, Python and Ruby.'],
-    ['slide', 'orange','line-chart', 'Consultation: Without great plans, beauty and good implement are nothing. I growing your plans to a successful business.']
+    ['red', 'laptop', 'Front End & UI/UX Design: I can change your online face to an amazing beautiful one. I do this with Html, CSS and Javascript.'],
+    ['green','terminal', 'Back-End & Programming: The Difference between a work and a perfect work is how to implement it, I can do this stuff with powerful programming languages like PHP, Python and Ruby.'],
+    ['orange','line-chart', 'Consultation: Without great plans, beauty and good implement are nothing. I growing your plans to a successful business.']
 ];
 
 $social_items = [

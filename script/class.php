@@ -39,39 +39,31 @@
         if(!$screen_size)
         {
             echo '<div class="col-sm-6 col-md-6 col-lg-6">';
-            echo '<div class="slider">';
+            echo '<div class="slides">';
+
             foreach ($array as $attr)
             {
-                echo   '<div class="'.$attr[0].'">
-                        <span class="fa-stack fa-2x">
-                        <i class="fa fa-square fa-stack-2x '.$attr[1].'"></i>
-                        <i class="fa fa-'.$attr[2].' fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <p>'.$attr[3].'</p></div>';
+                echo   '<div class="slide ">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-square fa-stack-2x '.$attr[0].'"></i>
+                                <i class="fa fa-'.$attr[1].' fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <p>'.$attr[2].'</p>
+                        </div>';
             }
-            echo '</div>';
-
-            echo   '<div class="slider-nav">
-                        <a href="#" class="arrow-prev"><i class="fa fa-lg fa-arrow-circle-o-left"></i></a>
-                        <ul class="slider-dots">
-                            <li class="dot active-dot"><i class="fa fa-lg fa-dot-circle-o"></i></li>
-                            <li class="dot"><i class="fa fa-lg fa-dot-circle-o"></i></li>
-                            <li class="dot"><i class="fa fa-lg fa-dot-circle-o"></i></li>
-                        </ul>
-                        <a href="#" class="arrow-next"><i class="fa fa-lg fa-arrow-circle-o-right"></i></a>
-                    </div>';
 
             echo '</div>';
+
 
         } else {
             echo '<div class="item">';
             foreach ($array as $attr)
             {
                 echo   '<span class="fa-stack fa-2x">
-                        <i class="fa fa-square fa-stack-2x '.$attr[1].'"></i>
-                        <i class="fa fa-'.$attr[2].' fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-square fa-stack-2x '.$attr[0].'"></i>
+                        <i class="fa fa-'.$attr[1].' fa-stack-1x fa-inverse"></i>
                         </span>
-                        <p>'.$attr[3].'</p>';
+                        <p>'.$attr[2].'</p>';
             }
             echo '</div>';
         }
